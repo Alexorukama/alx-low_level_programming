@@ -7,6 +7,6 @@
 int main(void)
 {
 	/* prints to stout using printf */
-	printf("with proper gramar, but the outcome is a piece of art,\n");
+	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
 }
