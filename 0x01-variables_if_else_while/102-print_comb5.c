@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Prints numbers 00 to 99
+ * main - Prints numbers 0 to 99
  *
  * Return: Always 0 (Success)
  */
@@ -25,7 +25,7 @@ while (h < 58)
 				{
 					putchar(h);
 					putchar(g);
-					putchar(' ');
+					putchar(',');
 					putchar(e);
 					putchar(i);
 					if (h == 57 && g == 56 && e == 57 && i == 57)
