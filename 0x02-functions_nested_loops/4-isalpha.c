@@ -8,9 +8,9 @@
  *
  * Return: 1 ofr letter. 0 for the rest.
  */
-int _isalpha(int C)
+int _isalpha(int c)
 {
-	if ((c >= 97 && c<= 122) || (c >= 65 && c<= 90))
+	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
 	{
 		return (1);
 	}
