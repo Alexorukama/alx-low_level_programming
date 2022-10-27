@@ -2,10 +2,9 @@
 
 /**
  * print_re - print a string in reverse
- * @s: string to be printed
+ * @s: string to be printed in rev
  */
-
-void print_rev(char *s);
+void print_rev(char *s)
 {
 	int i, n;
 
