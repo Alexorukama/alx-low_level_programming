@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _strcmp - compares 2 string
- * @s1: string
- * @s2: strmp
+ * _strcmp - compare 2 string
+ * @s1:string
+ * @s2:strmp
  *
  * Return: int
  */
@@ -22,6 +22,6 @@ int_strcmp(char *s1, char *s2)
 
 	else
 	{
-
-	return (*s1 - *s2);
+		return (*s1 - *s2);
+	}
 }
