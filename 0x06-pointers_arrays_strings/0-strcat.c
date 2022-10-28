@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * strcat - concatenates the string pointed
- * @dest: A poiter to the string to be concatenated upon
- * @src: The pointer to the destination string
+ * strcat - concat 2 string
+ * @dest: char
+ * @src: char
+ * Return: char
  */
 char *_strcat(char *dest, char *src)
 {

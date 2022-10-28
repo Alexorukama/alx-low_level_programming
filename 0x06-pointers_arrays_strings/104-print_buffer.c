@@ -5,7 +5,7 @@
  * print_line - prints a s bytes of a buffer
  * @c: buffer to print
  * @s: bytes of buffer to print
- * @1: line of buffer to print
+ * @l: line of buffer to print
  * Return: void
  */
 void print_line(char *c, int s, int l)
@@ -29,6 +29,7 @@ void print_line(char *c, int s, int l)
 			putchar('.');
 	}
 }
+
 
 /**
  * print_buffer - print a buffer
