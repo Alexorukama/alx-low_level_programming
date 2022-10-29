@@ -2,9 +2,9 @@
 
 /**
  * _strcmp - compare two strings
- * @s1: string 1.
- * @s2: string 2.
- * Return: int.
+ * @s1: string 
+ * @s2: strmp 
+ * Return: int
  */
 
 int _strcmp(char *s1, char *s2)
