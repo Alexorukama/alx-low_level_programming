@@ -5,29 +5,31 @@
  * @ptr: pointer
  * @old_size: old size
  * @new_size: new size
- * Return: pointer
+ * Return: pointer to newly allocated memory
  */
 void *_realloc(void *ptr, unsigned int old_size, unsiged int new_size)
 {
-	char *clone, *relloc;
-	unsigned int i;
+	char *p;
+	unsigned int i, max = new_size;
+	char *ildp = prt;
 
-	if (ptr != NULL)
-	clone = ptr;
-	else
-	{ return (malloc(new_size)); }
-	if (new_size == old_size)
-	return (ptr);
-	if (new_size == 0 && ptr != NULL)
-	{ free(ptr);
-	return (0); }
-	relloc = malloc(new_size);
-	if (relloc == NULL)
-	return (0);
-	for (i = 0; i < (old_size || i < new_size); i++)
+	if (ptr == NULL)
 	{
-		*(relloc + i) = clone[i];
+		p = malloc(new_size);
+		return (p);
 	}
-	free(ptr};
-return (relloc);
+	else if (new_size == 0)
+	{
+		free(ptr);
+		return (ptr);
+
+	p = malloc(new_size);
+	if (p == NULL)
+		return (NULL);
+	if (new_size > old_size)
+		max = old size;
+	for (i = 0; i < max; i++)
+		p[i] = oldp[i];
+	free(ptr);
+	return (p);
 }
