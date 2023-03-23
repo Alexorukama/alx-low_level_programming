@@ -11,8 +11,7 @@
  * Return: 1 on success, 0 on failure
  *
  */
-int
-hash_table_set(hash_table_t *ht, const char *key, const char *value)
+int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index = 0;
 	hash_node_t *new_hash_node = NULL;
@@ -22,9 +21,10 @@ hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 
 	index = key_index((unsigned char *)key, ht->size);
-	tmp = ht->array[index];
+		tmp = ht->array[index];
 
 	/* check if key exists */
+	
 	while (tmp && strcmp(tmp->key, key) != 0)
 		tmp = tmp->next;
 
